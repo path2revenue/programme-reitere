@@ -41,8 +41,8 @@ export const siteConfig = {
        ══════════════════════════════════════════ */
     links: {
         whatsapp: "https://wa.me/33761941267?text=Salut%20!%20Je%20viens%20de%20la%20page%20R%C3%A9it%C3%A8re%20et%20j%E2%80%99aimerais%20en%20savoir%20plus%20sur%20le%20programme.",
-        bookingEmbed: "https://calendly.com/imranedessai/decouverte",
-        bookingEmbedType: "calendly",
+        bookingEmbed: "https://api.leadconnectorhq.com/widget/booking/UM00K5oL0z1yE01Ugdlw",
+        bookingEmbedType: "ghl",
     },
 
     /* ══════════════════════════════════════════
