@@ -33,7 +33,7 @@ export default function MerciPage() {
 
                 {/* Gift Card */}
                 {merci.gift && (
-                    <div className="max-w-[500px] w-full bg-[var(--color-bg-surface)] border border-[var(--color-border-default)] rounded-2xl p-8 animate-[fadeInUp_1.2s_ease-out]">
+                    <div className="max-w-[700px] w-full bg-[var(--color-bg-surface)] border border-[var(--color-border-default)] rounded-2xl p-8 animate-[fadeInUp_1.2s_ease-out]">
                         <div className="text-center mb-6">
                             <span className="inline-block px-3 py-1 rounded-full bg-[var(--color-cta)]/10 border border-[var(--color-cta)]/20 text-sm text-[var(--color-cta)] font-semibold mb-3">
                                 {merci.gift.badge}
@@ -41,6 +41,19 @@ export default function MerciPage() {
                             <h2 className="text-xl font-bold text-[var(--color-text-primary)] mb-2">{merci.gift.title}</h2>
                             <p className="text-sm text-[var(--color-text-secondary)]">{merci.gift.description}</p>
                         </div>
+
+                        {/* Embedded Video */}
+                        {merci.gift.embedUrl && (
+                            <div className="relative rounded-xl overflow-hidden mb-6 border border-[var(--color-border-default)]" style={{ paddingBottom: "56.25%" }}>
+                                <iframe
+                                    src={merci.gift.embedUrl}
+                                    style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: 0 }}
+                                    allow="fullscreen; picture-in-picture; accelerometer; encrypted-media; gyroscope"
+                                    allowFullScreen
+                                    title={merci.gift.title}
+                                />
+                            </div>
+                        )}
 
                         {/* Benefits */}
                         <div className="flex justify-center gap-6 mb-6">
@@ -51,17 +64,6 @@ export default function MerciPage() {
                                 </div>
                             ))}
                         </div>
-
-                        {/* CTA */}
-                        <a
-                            href={merci.gift.cta.url}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="w-full flex items-center justify-center px-6 py-4 bg-[#25D366] text-white font-bold rounded-xl text-lg hover:bg-[#22c55e] hover:-translate-y-0.5 transition-all duration-300"
-                        >
-                            {merci.gift.cta.icon === "whatsapp" && <WhatsAppIcon />}
-                            {merci.gift.cta.text}
-                        </a>
 
                         {merci.gift.footnote && (
                             <p className="text-xs text-[var(--color-text-muted)] text-center mt-4">{merci.gift.footnote}</p>

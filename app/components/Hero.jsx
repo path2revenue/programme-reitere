@@ -87,9 +87,9 @@ export default function Hero() {
                     />
                 </div>
 
-                {/* VSL Video */}
+                {/* VSL Video - positioned high for immediate visibility */}
                 {hero.vslUrl && (
-                    <div className="relative rounded-2xl overflow-hidden mb-10 animate-[fadeInUp_1.1s_ease-out]">
+                    <div className="relative rounded-2xl overflow-hidden mb-8 animate-[fadeInUp_1.05s_ease-out]">
                         <div className="absolute -inset-[2px] rounded-2xl bg-[conic-gradient(from_0deg,transparent_60%,var(--color-accent)_78%,var(--color-cta)_92%,transparent_100%)] animate-[spin_5s_linear_infinite] opacity-50 pointer-events-none" />
                         <div className="absolute inset-[2px] rounded-2xl bg-[var(--color-bg-primary)] pointer-events-none" />
                         <div className="relative rounded-2xl border border-[var(--color-border-default)] overflow-hidden" style={{ paddingBottom: "56.25%" }}>
