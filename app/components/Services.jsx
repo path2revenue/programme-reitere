@@ -43,7 +43,7 @@ export default function Services() {
                         <div
                             key={i}
                             ref={(el) => (refs.current[i] = el)}
-                            className={`relative bg-[var(--color-bg-card)] border border-[var(--color-border-default)] rounded-2xl p-6 hover:border-[var(--color-accent)]/40 hover:shadow-lg hover:shadow-[var(--color-accent)]/5 transition-all duration-300 cursor-pointer group ${svc.span === 2 ? "md:col-span-2" : ""
+                            className={`relative bg-[var(--color-bg-card)] border border-[var(--color-border-default)] rounded-2xl p-6 hover:border-[var(--color-accent)]/40 transition-all duration-300 cursor-pointer group ${svc.span === 2 ? "md:col-span-2" : ""
                                 } ${visibleCards.includes(i) ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
                             style={{ transitionDelay: `${i * 100}ms` }}
                         >

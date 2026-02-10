@@ -51,13 +51,12 @@ export default function Hero() {
     const { hero } = siteConfig;
 
     return (
-        <section className="relative flex flex-col items-center justify-center overflow-hidden pt-24 pb-10">
+        <section className="relative flex flex-col items-center justify-center overflow-hidden pt-28 pb-16">
             {/* Animated Mesh Background */}
             <div className="absolute inset-0 z-0">
                 <div className="absolute top-[-50%] left-[-50%] w-[200%] h-[200%] animate-[meshMove_20s_ease-in-out_infinite]">
-                    <div className="absolute top-[10%] left-[20%] w-[500px] h-[500px] rounded-full bg-[var(--color-accent)]/6 blur-[150px]" />
-                    <div className="absolute top-[50%] right-[15%] w-[400px] h-[400px] rounded-full bg-[var(--color-accent)]/5 blur-[120px]" />
-                    <div className="absolute bottom-[20%] left-[40%] w-[350px] h-[350px] rounded-full bg-[var(--color-cta)]/4 blur-[100px]" />
+                    <div className="absolute top-[10%] left-[20%] w-[500px] h-[500px] rounded-full bg-[var(--color-accent)]/3 blur-[180px]" />
+                    <div className="absolute top-[50%] right-[15%] w-[400px] h-[400px] rounded-full bg-[var(--color-accent)]/2 blur-[150px]" />
                 </div>
             </div>
 
@@ -89,10 +88,8 @@ export default function Hero() {
 
                 {/* VSL Video - positioned high for immediate visibility */}
                 {hero.vslUrl && (
-                    <div className="relative rounded-2xl overflow-hidden mb-8 animate-[fadeInUp_1.05s_ease-out]">
-                        <div className="absolute -inset-[2px] rounded-2xl bg-[conic-gradient(from_0deg,transparent_60%,var(--color-accent)_78%,var(--color-cta)_92%,transparent_100%)] animate-[spin_5s_linear_infinite] opacity-50 pointer-events-none" />
-                        <div className="absolute inset-[2px] rounded-2xl bg-[var(--color-bg-primary)] pointer-events-none" />
-                        <div className="relative rounded-2xl border border-[var(--color-border-default)] overflow-hidden" style={{ paddingBottom: "56.25%" }}>
+                    <div className="relative rounded-2xl overflow-hidden mb-10 animate-[fadeInUp_1.05s_ease-out] border border-[var(--color-accent)]/20">
+                        <div className="relative rounded-2xl overflow-hidden" style={{ paddingBottom: "56.25%" }}>
                             <iframe
                                 src={hero.vslUrl}
                                 style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%", border: 0 }}
@@ -114,8 +111,8 @@ export default function Hero() {
                             rel={cta.href === "__whatsapp__" ? "noopener noreferrer" : undefined}
                             className={
                                 cta.style === "primary"
-                                    ? "group px-8 py-4 bg-[var(--color-cta)] text-[var(--color-bg-primary)] font-bold rounded-xl text-lg hover:bg-[var(--color-cta-hover)] hover:-translate-y-1 transition-all duration-300 shadow-[0_0_0_0_var(--color-cta-glow)] hover:shadow-[0_8px_30px_var(--color-cta-glow)] animate-[pulseGlow_3s_ease-in-out_infinite]"
-                                    : "px-8 py-4 border border-[var(--color-border-hover)] text-[var(--color-text-secondary)] rounded-xl text-lg hover:border-[var(--color-accent-light)] hover:text-white transition-all duration-300"
+                                    ? "group px-8 py-4 bg-[var(--color-cta)] text-[var(--color-bg-primary)] font-bold rounded-full text-lg hover:bg-[var(--color-cta-hover)] transition-all duration-300 cursor-pointer"
+                                    : "px-8 py-4 border border-[var(--color-border-hover)] text-[var(--color-text-secondary)] rounded-full text-lg hover:border-[var(--color-accent)] hover:text-white transition-all duration-300 cursor-pointer"
                             }
                         >
                             {cta.icon === "whatsapp" && <WhatsAppIcon />}

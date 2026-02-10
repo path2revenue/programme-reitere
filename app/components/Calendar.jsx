@@ -61,7 +61,7 @@ export default function Calendar() {
                                 href={links.whatsapp}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                className="inline-flex items-center px-5 py-3 bg-[#25D366] text-white rounded-lg font-semibold text-sm hover:bg-[#22c55e] transition-colors"
+                                className="inline-flex items-center px-5 py-3 bg-[#25D366] text-white rounded-full font-semibold text-sm hover:bg-[#22c55e] transition-colors cursor-pointer"
                             >
                                 <WhatsAppIcon />
                                 {data.whatsappLabel}

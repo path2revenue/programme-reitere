@@ -47,7 +47,7 @@ export default function Process() {
                                     </div>
 
                                     {/* Circle on line */}
-                                    <div className="hidden md:flex w-12 h-12 rounded-full border-2 border-[var(--color-accent)] bg-[var(--color-bg-primary)] items-center justify-center text-sm font-bold text-[var(--color-accent)] shrink-0 z-10">
+                                    <div className="hidden md:flex w-12 h-12 rounded-full bg-[var(--color-accent)] items-center justify-center text-sm font-bold text-[var(--color-bg-primary)] shrink-0 z-10">
                                         {step.number}
                                     </div>
 

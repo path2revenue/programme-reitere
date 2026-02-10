@@ -44,7 +44,7 @@ export default function PainPoints() {
                         <div
                             key={i}
                             ref={(el) => (refs.current[i] = el)}
-                            className={`relative bg-[var(--color-bg-surface)] border border-[var(--color-border-default)] rounded-2xl p-8 hover:border-[var(--color-danger)]/30 hover:shadow-lg hover:shadow-[var(--color-danger)]/5 transition-all duration-300 cursor-pointer group ${visibleCards.includes(i) ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                            className={`relative bg-[var(--color-bg-surface)] border border-[var(--color-border-default)] rounded-2xl p-8 hover:border-[var(--color-danger)]/30 transition-all duration-300 cursor-pointer group ${visibleCards.includes(i) ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                                 }`}
                             style={{ transitionDelay: `${i * 200}ms` }}
                         >

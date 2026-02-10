@@ -5,33 +5,33 @@
    Config-driven palette system with 6 presets
    ============================================ */
 
-/* === DEFAULT PALETTE: Trust === */
+/* === DEFAULT PALETTE: Ultra-Dark Minimalist (FADesign-inspired) === */
 @theme inline {
-  --color-bg-primary: #0C111D;
-  --color-bg-surface: #111827;
-  --color-bg-card: #1A2035;
-  --color-bg-elevated: #1F2A40;
+  --color-bg-primary: #050505;
+  --color-bg-surface: #0A0A0A;
+  --color-bg-card: #111111;
+  --color-bg-elevated: #1A1A1A;
 
-  --color-border-default: #1E293B;
-  --color-border-hover: #334155;
+  --color-border-default: #1A1A1A;
+  --color-border-hover: #2A2A2A;
 
-  --color-text-primary: #F1F5F9;
-  --color-text-secondary: #94A3B8;
-  --color-text-muted: #64748B;
+  --color-text-primary: #F5F5F5;
+  --color-text-secondary: #888888;
+  --color-text-muted: #555555;
 
-  --color-accent: #3B82F6;
-  --color-accent-light: #60A5FA;
-  --color-accent-glow: rgba(59, 130, 246, 0.4);
+  --color-accent: #10B981;
+  --color-accent-light: #34D399;
+  --color-accent-glow: rgba(16, 185, 129, 0.3);
 
-  --color-cta: #EAB308;
-  --color-cta-hover: #FACC15;
-  --color-cta-glow: rgba(234, 179, 8, 0.35);
+  --color-cta: #10B981;
+  --color-cta-hover: #34D399;
+  --color-cta-glow: rgba(16, 185, 129, 0.25);
 
   --color-success: #10B981;
   --color-danger: #EF4444;
 
-  --color-gradient-from: #60A5FA;
-  --color-gradient-to: #EAB308;
+  --color-gradient-from: #10B981;
+  --color-gradient-to: #34D399;
 }
 
 /* === PALETTE OVERRIDES === */
@@ -134,7 +134,7 @@ h3,
 h4,
 h5,
 h6 {
-  letter-spacing: -0.025em;
+  letter-spacing: -0.035em;
   line-height: 1.15;
 }
 
