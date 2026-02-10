@@ -34,6 +34,14 @@
   --color-gradient-to: #E0C068;
 }
 
+/* === HEADING TYPOGRAPHY (editorial serif) === */
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Playfair Display', serif;
+}
+
 /* === PALETTE OVERRIDES === */
 
 /* Vibrant — Tech Startups, Creative Tools */

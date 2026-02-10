@@ -41,7 +41,7 @@ export default function Navbar() {
                     ))}
                     <a
                         href={navbar.cta.href}
-                        className="px-5 py-2 bg-[var(--color-cta)] text-white font-semibold rounded-full text-sm hover:bg-[var(--color-cta-hover)] transition-colors cursor-pointer"
+                        className="px-5 py-2 bg-[var(--color-cta)] text-white font-semibold rounded-xl text-sm hover:bg-[var(--color-cta-hover)] transition-colors cursor-pointer"
                     >
                         {navbar.cta.text}
                     </a>
@@ -78,7 +78,7 @@ export default function Navbar() {
                     <a
                         href={navbar.cta.href}
                         onClick={() => setMenuOpen(false)}
-                        className="block w-full text-center px-5 py-3 bg-[var(--color-cta)] text-white font-semibold rounded-full cursor-pointer"
+                        className="block w-full text-center px-5 py-3 bg-[var(--color-cta)] text-white font-semibold rounded-xl cursor-pointer"
                     >
                         {navbar.cta.text}
                     </a>

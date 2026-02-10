@@ -28,37 +28,48 @@ export default function Services() {
     return (
         <section id="services" className="py-24 px-6 bg-[var(--color-bg-surface)]/30">
             <div className="max-w-[1200px] mx-auto">
-                <div className="text-center mb-16">
+                {/* LEFT-ALIGNED HEADER with accent bar */}
+                <div className="mb-16">
                     <span className="text-xs uppercase tracking-[0.2em] text-[var(--color-accent)] font-semibold">{data.eyebrow}</span>
-                    <h2 className="text-3xl md:text-5xl font-bold mt-3 mb-4">
-                        {data.headline}{" "}
-                        <span className="bg-gradient-to-r from-[var(--color-gradient-from)] to-[var(--color-gradient-to)] bg-clip-text text-transparent">{data.highlightedText}</span>{" "}
-                        {data.headlineEnd}
-                    </h2>
-                    <p className="text-[var(--color-text-secondary)] max-w-[600px] mx-auto">{data.subtitle}</p>
+                    <div className="flex items-start gap-4 mt-3">
+                        <div className="w-1 h-16 bg-gradient-to-b from-[var(--color-accent)] to-transparent rounded-full shrink-0 mt-1" />
+                        <div>
+                            <h2 className="text-3xl md:text-5xl font-bold mb-3">
+                                {data.headline}{" "}
+                                <span className="bg-gradient-to-r from-[var(--color-gradient-from)] to-[var(--color-gradient-to)] bg-clip-text text-transparent">{data.highlightedText}</span>{" "}
+                                {data.headlineEnd}
+                            </h2>
+                            <p className="text-[var(--color-text-secondary)] max-w-[600px]">{data.subtitle}</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div className="grid md:grid-cols-4 gap-5">
+                {/* 2-COLUMN CARDS with more spacing */}
+                <div className="grid md:grid-cols-2 gap-6">
                     {data.items.map((svc, i) => (
                         <div
                             key={i}
                             ref={(el) => (refs.current[i] = el)}
-                            className={`relative bg-[var(--color-bg-card)] border border-[var(--color-border-default)] rounded-2xl p-6 shadow-sm hover:shadow-md hover:border-[var(--color-accent)]/40 transition-all duration-300 cursor-pointer group ${svc.span === 2 ? "md:col-span-2" : ""
-                                } ${visibleCards.includes(i) ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
+                            className={`relative bg-[var(--color-bg-card)] border border-[var(--color-border-default)] rounded-xl p-7 shadow-sm hover:shadow-md hover:border-[var(--color-accent)]/40 transition-all duration-300 cursor-pointer group ${visibleCards.includes(i) ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+                                }`}
                             style={{ transitionDelay: `${i * 100}ms` }}
                         >
-                            <div className="w-10 h-10 rounded-xl bg-[var(--color-accent)]/10 flex items-center justify-center mb-4">
-                                <LucideIcon name={svc.icon} size={20} className="text-[var(--color-accent)]" />
+                            <div className="flex items-start gap-4">
+                                <div className="w-11 h-11 rounded-lg bg-[var(--color-accent)]/10 flex items-center justify-center shrink-0">
+                                    <LucideIcon name={svc.icon} size={20} className="text-[var(--color-accent)]" />
+                                </div>
+                                <div className="flex-1">
+                                    <h3 className="text-base font-bold text-[var(--color-text-primary)] mb-1.5">{svc.title}</h3>
+                                    <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">{svc.description}</p>
+                                    {svc.badge && (
+                                        <span className="inline-block mt-3 text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-md bg-[var(--color-cta)]/10 border border-[var(--color-cta)]/20 text-[var(--color-cta)]">
+                                            {svc.badge}
+                                        </span>
+                                    )}
+                                </div>
                             </div>
-                            <h3 className="text-base font-bold text-[var(--color-text-primary)] mb-2">{svc.title}</h3>
-                            <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">{svc.description}</p>
-                            {svc.badge && (
-                                <span className="inline-block mt-3 text-[10px] uppercase tracking-wider px-2 py-0.5 rounded-full bg-[var(--color-cta)]/10 border border-[var(--color-cta)]/20 text-[var(--color-cta)]">
-                                    {svc.badge}
-                                </span>
-                            )}
                             {/* Hover glow */}
-                            <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-[var(--color-accent)]/0 to-[var(--color-accent)]/0 group-hover:from-[var(--color-accent)]/[0.03] group-hover:to-transparent transition-all duration-500 pointer-events-none" />
+                            <div className="absolute inset-0 rounded-xl bg-[var(--color-accent)]/0 group-hover:bg-[var(--color-accent)]/[0.02] transition-colors duration-300 pointer-events-none" />
                         </div>
                     ))}
                 </div>

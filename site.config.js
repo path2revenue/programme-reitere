@@ -30,10 +30,10 @@ export const siteConfig = {
        ══════════════════════════════════════════ */
     design: {
         palette: "default",
-        fontHeading: "Inter",
+        fontHeading: "Playfair Display",
         fontBody: "Inter",
         fontWeights: "400;500;600;700;800;900",
-        borderRadius: "16px",
+        borderRadius: "8px",
     },
 
     /* ══════════════════════════════════════════
@@ -101,13 +101,13 @@ export const siteConfig = {
         ],
         stats: [
             { value: 250, suffix: "+", label: "Sessions de mentoring" },
-            { value: 90, suffix: "j", label: "Premier client signé" },
+            { value: 90, suffix: "j–6m", label: "Résultats concrets" },
             { value: 15, suffix: "min/j", label: "Système de prospection" },
             { value: 3, suffix: "", label: "Places / mois" },
         ],
         trustBadges: [
             "Méthode éprouvée sur +250 sessions",
-            "Résultats concrets en 60-90 jours",
+            "Résultats concrets entre 90 jours et 6 mois",
             "3 places chaque mois",
         ],
     },
@@ -191,7 +191,7 @@ export const siteConfig = {
         headline: "Les résultats concrets",
         highlightedText: "du programme",
         subtitle:
-            "Pas des promesses. Des résultats vérifiables.",
+            "Pas des promesses en 24h. Une compétence que tu gardes pour le long terme.",
         items: [
             {
                 metric: "check-circle",
@@ -201,9 +201,9 @@ export const siteConfig = {
             },
             {
                 metric: "handshake",
-                label: "Premier client signé",
-                description: "Tu signes ton premier client direct en moins de 90 jours.",
-                badge: "Résultat",
+                label: "Premiers résultats concrets",
+                description: "Résultats entre 90 jours et 6 mois. L'objectif : stabiliser et maîtriser la compétence pour le long terme.",
+                badge: "Long terme",
             },
             {
                 metric: "trending-up",
@@ -297,7 +297,7 @@ export const siteConfig = {
                 icon: "zap",
                 title: "3. Ton système (15 à 30 min/jour)",
                 description:
-                    "Comment contacter les bonnes personnes, démarrer des conversations utiles, amener tes futurs clients en visio. Tu signes ton premier client en moins de 90 jours.",
+                    "Comment contacter les bonnes personnes, démarrer des conversations utiles, amener tes futurs clients en visio. Résultats concrets entre 90 jours et 6 mois.",
                 badge: "Acquisition",
                 span: 2,
             },
@@ -358,7 +358,7 @@ export const siteConfig = {
                 number: 3,
                 title: "Mettre en place ton système",
                 description:
-                    "15 à 30 min par jour. Contacter les bonnes personnes, démarrer des conversations utiles, amener tes futurs clients en visio avec la méthode du « guide ». Tu signes ton premier client en moins de 90 jours.",
+                    "15 à 30 min par jour. Contacter les bonnes personnes, démarrer des conversations utiles, amener tes futurs clients en visio avec la méthode du « guide ». Résultats concrets entre 90 jours et 6 mois.",
             },
         ],
     },
@@ -550,7 +550,7 @@ export const siteConfig = {
         ],
         badges: [
             "+250 sessions",
-            "Résultats en 90 jours",
+            "Résultats en 90j–6 mois",
             "3 places / mois",
             "Appel gratuit",
         ],

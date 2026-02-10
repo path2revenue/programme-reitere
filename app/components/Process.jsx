@@ -17,45 +17,46 @@ export default function Process() {
     return (
         <section ref={ref} className="py-24 px-6">
             <div className="max-w-[1200px] mx-auto">
-                <div className="text-center mb-16">
+                {/* LEFT-ALIGNED HEADER with accent bar */}
+                <div className="mb-16">
                     <span className="text-xs uppercase tracking-[0.2em] text-[var(--color-accent)] font-semibold">{data.eyebrow}</span>
-                    <h2 className="text-3xl md:text-5xl font-bold mt-3">
-                        {data.headline}{" "}
-                        <span className="bg-gradient-to-r from-[var(--color-gradient-from)] to-[var(--color-gradient-to)] bg-clip-text text-transparent">{data.highlightedText}</span>
-                    </h2>
+                    <div className="flex items-start gap-4 mt-3">
+                        <div className="w-1 h-16 bg-gradient-to-b from-[var(--color-accent)] to-transparent rounded-full shrink-0 mt-1" />
+                        <div>
+                            <h2 className="text-3xl md:text-5xl font-bold">
+                                {data.headline}{" "}
+                                <span className="bg-gradient-to-r from-[var(--color-gradient-from)] to-[var(--color-gradient-to)] bg-clip-text text-transparent">{data.highlightedText}</span>
+                            </h2>
+                            {data.subtitle && <p className="text-[var(--color-text-secondary)] max-w-[600px] mt-3">{data.subtitle}</p>}
+                        </div>
+                    </div>
                 </div>
 
+                {/* HORIZONTAL TIMELINE */}
                 <div className="relative">
-                    {/* Vertical line */}
-                    <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-px bg-gradient-to-b from-[var(--color-accent)]/60 via-[var(--color-accent)]/20 to-transparent" />
+                    {/* Connecting horizontal line — desktop only */}
+                    <div className="hidden md:block absolute top-6 left-0 right-0 h-px bg-gradient-to-r from-[var(--color-accent)]/60 via-[var(--color-accent)]/30 to-transparent" />
 
-                    <div className="space-y-12 md:space-y-16">
-                        {data.steps.map((step, i) => {
-                            const isLeft = i % 2 === 0;
-                            return (
-                                <div
-                                    key={i}
-                                    className={`relative flex flex-col md:flex-row items-center gap-6 transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-                                        } ${isLeft ? "md:flex-row" : "md:flex-row-reverse"}`}
-                                    style={{ transitionDelay: `${i * 200}ms` }}
-                                >
-                                    {/* Content */}
-                                    <div className={`flex-1 bg-[var(--color-bg-surface)] border border-[var(--color-border-default)] rounded-2xl p-6 md:p-8 ${isLeft ? "md:text-right" : "md:text-left"}`}>
-                                        <span className="text-sm font-mono text-[var(--color-accent)] mb-2 block">{step.number}</span>
-                                        <h3 className="text-xl font-bold text-[var(--color-text-primary)] mb-2">{step.title}</h3>
-                                        <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">{step.description}</p>
-                                    </div>
-
-                                    {/* Circle on line */}
-                                    <div className="hidden md:flex w-12 h-12 rounded-full bg-[var(--color-accent)] items-center justify-center text-sm font-bold text-white shrink-0 z-10">
-                                        {step.number}
-                                    </div>
-
-                                    {/* Spacer for opposite side */}
-                                    <div className="hidden md:block flex-1" />
+                    <div className="grid md:grid-cols-3 gap-8">
+                        {data.steps.map((step, i) => (
+                            <div
+                                key={i}
+                                className={`relative transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
+                                    }`}
+                                style={{ transitionDelay: `${i * 200}ms` }}
+                            >
+                                {/* Step number circle */}
+                                <div className="w-12 h-12 rounded-full bg-[var(--color-accent)] flex items-center justify-center text-sm font-bold text-white mb-5 relative z-10">
+                                    {step.number}
                                 </div>
-                            );
-                        })}
+
+                                {/* Step content */}
+                                <div className="bg-[var(--color-bg-surface)] border border-[var(--color-border-default)] rounded-xl p-6">
+                                    <h3 className="text-xl font-bold text-[var(--color-text-primary)] mb-3">{step.title}</h3>
+                                    <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">{step.description}</p>
+                                </div>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
