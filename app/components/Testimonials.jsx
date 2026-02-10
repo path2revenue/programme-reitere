@@ -39,7 +39,7 @@ export default function Testimonials() {
                 </div>
 
                 {/* Card */}
-                <div className="relative bg-[var(--color-bg-card)] border border-[var(--color-border-default)] rounded-2xl p-8 md:p-10 min-h-[260px] overflow-hidden">
+                <div className="relative bg-[var(--color-bg-card)] border border-[var(--color-border-default)] rounded-2xl p-8 md:p-10 min-h-[260px] overflow-hidden shadow-sm">
                     <div className="absolute top-0 left-0 right-0 h-1 rounded-t-2xl" style={{ background: items[current].color }} />
                     <div className="text-lg text-[var(--color-cta)] mb-4">{"★".repeat(items[current].stars)}</div>
                     <p className="text-lg md:text-xl text-[var(--color-text-primary)] italic leading-relaxed mb-6">

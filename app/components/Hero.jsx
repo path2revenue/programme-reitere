@@ -51,12 +51,12 @@ export default function Hero() {
     const { hero } = siteConfig;
 
     return (
-        <section className="relative flex flex-col items-center justify-center overflow-hidden pt-28 pb-16">
+        <section className="relative flex flex-col items-center justify-center overflow-hidden pt-12 pb-16">
             {/* Animated Mesh Background */}
             <div className="absolute inset-0 z-0">
                 <div className="absolute top-[-50%] left-[-50%] w-[200%] h-[200%] animate-[meshMove_20s_ease-in-out_infinite]">
-                    <div className="absolute top-[10%] left-[20%] w-[500px] h-[500px] rounded-full bg-[var(--color-accent)]/3 blur-[180px]" />
-                    <div className="absolute top-[50%] right-[15%] w-[400px] h-[400px] rounded-full bg-[var(--color-accent)]/2 blur-[150px]" />
+                    <div className="absolute top-[10%] left-[20%] w-[500px] h-[500px] rounded-full bg-[var(--color-accent)]/5 blur-[200px]" />
+                    <div className="absolute top-[50%] right-[15%] w-[400px] h-[400px] rounded-full bg-[var(--color-accent)]/3 blur-[180px]" />
                 </div>
             </div>
 
@@ -111,7 +111,7 @@ export default function Hero() {
                             rel={cta.href === "__whatsapp__" ? "noopener noreferrer" : undefined}
                             className={
                                 cta.style === "primary"
-                                    ? "group px-8 py-4 bg-[var(--color-cta)] text-[var(--color-bg-primary)] font-bold rounded-full text-lg hover:bg-[var(--color-cta-hover)] transition-all duration-300 cursor-pointer"
+                                    ? "group px-8 py-4 bg-[var(--color-cta)] text-white font-bold rounded-full text-lg hover:bg-[var(--color-cta-hover)] transition-all duration-300 cursor-pointer"
                                     : "px-8 py-4 border border-[var(--color-border-hover)] text-[var(--color-text-secondary)] rounded-full text-lg hover:border-[var(--color-accent)] hover:text-white transition-all duration-300 cursor-pointer"
                             }
                         >

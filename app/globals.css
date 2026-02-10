@@ -5,33 +5,33 @@
    Config-driven palette system with 6 presets
    ============================================ */
 
-/* === DEFAULT PALETTE: Ultra-Dark Minimalist (FADesign-inspired) === */
+/* === DEFAULT PALETTE: Navy & Gold Premium (Coaching/Mentorat) === */
 @theme inline {
-  --color-bg-primary: #050505;
-  --color-bg-surface: #0A0A0A;
-  --color-bg-card: #111111;
-  --color-bg-elevated: #1A1A1A;
+  --color-bg-primary: #0B1121;
+  --color-bg-surface: #111B2E;
+  --color-bg-card: #162035;
+  --color-bg-elevated: #1C2840;
 
-  --color-border-default: #1A1A1A;
-  --color-border-hover: #2A2A2A;
+  --color-border-default: #1E2D4A;
+  --color-border-hover: #2A3D5E;
 
-  --color-text-primary: #F5F5F5;
-  --color-text-secondary: #888888;
-  --color-text-muted: #555555;
+  --color-text-primary: #F0EDE6;
+  --color-text-secondary: #8896B3;
+  --color-text-muted: #5A6A8A;
 
-  --color-accent: #10B981;
-  --color-accent-light: #34D399;
-  --color-accent-glow: rgba(16, 185, 129, 0.3);
+  --color-accent: #C9A84C;
+  --color-accent-light: #E0C068;
+  --color-accent-glow: rgba(201, 168, 76, 0.25);
 
-  --color-cta: #10B981;
-  --color-cta-hover: #34D399;
-  --color-cta-glow: rgba(16, 185, 129, 0.25);
+  --color-cta: #C9A84C;
+  --color-cta-hover: #E0C068;
+  --color-cta-glow: rgba(201, 168, 76, 0.2);
 
-  --color-success: #10B981;
+  --color-success: #34D399;
   --color-danger: #EF4444;
 
-  --color-gradient-from: #10B981;
-  --color-gradient-to: #34D399;
+  --color-gradient-from: #C9A84C;
+  --color-gradient-to: #E0C068;
 }
 
 /* === PALETTE OVERRIDES === */

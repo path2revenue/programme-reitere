@@ -29,7 +29,7 @@ export const siteConfig = {
        DESIGN SYSTEM
        ══════════════════════════════════════════ */
     design: {
-        palette: "dark",
+        palette: "default",
         fontHeading: "Inter",
         fontBody: "Inter",
         fontWeights: "400;500;600;700;800;900",

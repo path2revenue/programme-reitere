@@ -35,7 +35,7 @@ export default function Results() {
                     {data.items.map((item, i) => (
                         <div
                             key={i}
-                            className={`bg-[var(--color-bg-surface)] border border-[var(--color-border-default)] rounded-2xl p-6 text-center hover:border-[var(--color-accent)]/30 transition-all duration-300 cursor-pointer ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                            className={`bg-[var(--color-bg-surface)] border border-[var(--color-border-default)] rounded-2xl p-6 text-center shadow-sm hover:shadow-md hover:border-[var(--color-accent)]/30 transition-all duration-300 cursor-pointer ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                                 }`}
                             style={{ transitionDelay: `${i * 150}ms` }}
                         >

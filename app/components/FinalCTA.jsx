@@ -27,8 +27,8 @@ export default function FinalCTA() {
     return (
         <section ref={ref} className="py-24 px-6 relative overflow-hidden">
             {/* Background glows */}
-            <div className="absolute top-1/2 left-1/4 w-[400px] h-[400px] bg-[var(--color-accent)]/3 rounded-full blur-[180px] pointer-events-none" />
-            <div className="absolute top-1/3 right-1/4 w-[300px] h-[300px] bg-[var(--color-accent)]/2 rounded-full blur-[150px] pointer-events-none" />
+            <div className="absolute top-1/2 left-1/4 w-[400px] h-[400px] bg-[var(--color-accent)]/5 rounded-full blur-[200px] pointer-events-none" />
+            <div className="absolute top-1/3 right-1/4 w-[300px] h-[300px] bg-[var(--color-accent)]/3 rounded-full blur-[180px] pointer-events-none" />
 
             <div className={`relative max-w-[700px] mx-auto text-center transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
                 <span className="text-xs uppercase tracking-[0.2em] text-[var(--color-accent)] font-semibold">{data.eyebrow}</span>
@@ -50,7 +50,7 @@ export default function FinalCTA() {
                             rel={cta.href === "__whatsapp__" ? "noopener noreferrer" : undefined}
                             className={
                                 cta.style === "primary"
-                                    ? "group px-8 py-4 bg-[var(--color-cta)] text-[var(--color-bg-primary)] font-bold rounded-full text-lg hover:bg-[var(--color-cta-hover)] transition-all duration-300 cursor-pointer"
+                                    ? "group px-8 py-4 bg-[var(--color-cta)] text-white font-bold rounded-full text-lg hover:bg-[var(--color-cta-hover)] transition-all duration-300 cursor-pointer"
                                     : "px-8 py-4 border border-[var(--color-border-hover)] text-[var(--color-text-secondary)] rounded-full text-lg hover:border-[var(--color-accent)] hover:text-white transition-all duration-300 cursor-pointer"
                             }
                         >
