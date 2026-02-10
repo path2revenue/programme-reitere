@@ -70,24 +70,23 @@ export default function Calendar() {
                     </div>
 
                     {/* Right — Booking Embed */}
-                    <div className="md:col-span-3 bg-[var(--color-bg-surface)] border border-[var(--color-border-default)] rounded-2xl p-2 overflow-hidden min-h-[500px]">
+                    <div className="md:col-span-3 bg-[var(--color-bg-surface)] border border-[var(--color-border-default)] rounded-2xl p-2 min-h-[700px]">
                         {links.bookingEmbedType === "ghl" ? (
                             <iframe
                                 src={links.bookingEmbed}
-                                style={{ width: "100%", border: "none", overflow: "hidden", minHeight: "500px" }}
-                                scrolling="no"
+                                style={{ width: "100%", border: "none", minHeight: "700px" }}
                                 title="Booking calendar"
                             />
                         ) : links.bookingEmbedType === "calendly" ? (
                             <iframe
                                 src={links.bookingEmbed}
-                                style={{ width: "100%", border: "none", minHeight: "600px" }}
+                                style={{ width: "100%", border: "none", minHeight: "700px" }}
                                 title="Booking calendar"
                             />
                         ) : (
                             <iframe
                                 src={links.bookingEmbed}
-                                style={{ width: "100%", border: "none", minHeight: "500px" }}
+                                style={{ width: "100%", border: "none", minHeight: "700px" }}
                                 title="Booking calendar"
                             />
                         )}

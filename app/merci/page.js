@@ -3,6 +3,7 @@
 import { siteConfig } from "@/site.config";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import LucideIcon from "../components/LucideIcon";
 
 const WhatsAppIcon = () => (
     <svg className="w-6 h-6 inline-block mr-2" fill="currentColor" viewBox="0 0 24 24">
@@ -19,7 +20,9 @@ export default function MerciPage() {
             <main className="min-h-screen flex flex-col items-center justify-center px-6 pt-24 pb-16">
                 {/* Confirmation */}
                 <div className="text-center max-w-[600px] animate-[fadeInUp_0.8s_ease-out]">
-                    <div className="text-6xl mb-6">✅</div>
+                    <div className="w-16 h-16 rounded-2xl bg-emerald-500/10 flex items-center justify-center mx-auto mb-6">
+                        <LucideIcon name="check-circle" size={32} className="text-emerald-500" />
+                    </div>
                     <h1 className="text-3xl md:text-5xl font-bold mb-4">
                         {merci.headline}{" "}
                         <span className="bg-gradient-to-r from-[var(--color-gradient-from)] to-[var(--color-gradient-to)] bg-clip-text text-transparent">
@@ -59,7 +62,9 @@ export default function MerciPage() {
                         <div className="flex justify-center gap-6 mb-6">
                             {merci.gift.benefits.map((b, i) => (
                                 <div key={i} className="text-center">
-                                    <div className="text-2xl mb-1">{b.icon}</div>
+                                    <div className="w-9 h-9 rounded-lg bg-[var(--color-accent)]/10 flex items-center justify-center mx-auto mb-2">
+                                        <LucideIcon name={b.icon} size={18} className="text-[var(--color-accent)]" />
+                                    </div>
                                     <div className="text-xs text-[var(--color-text-muted)]">{b.label}</div>
                                 </div>
                             ))}

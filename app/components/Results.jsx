@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { siteConfig } from "@/site.config";
+import LucideIcon from "./LucideIcon";
 
 export default function Results() {
     const { results: data } = siteConfig;
@@ -34,12 +35,12 @@ export default function Results() {
                     {data.items.map((item, i) => (
                         <div
                             key={i}
-                            className={`bg-[var(--color-bg-surface)] border border-[var(--color-border-default)] rounded-2xl p-6 text-center hover:border-[var(--color-accent)]/30 hover:-translate-y-1 transition-all duration-500 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                            className={`bg-[var(--color-bg-surface)] border border-[var(--color-border-default)] rounded-2xl p-6 text-center hover:border-[var(--color-accent)]/30 hover:shadow-lg hover:shadow-[var(--color-accent)]/5 transition-all duration-300 cursor-pointer ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                                 }`}
                             style={{ transitionDelay: `${i * 150}ms` }}
                         >
-                            <div className="text-3xl md:text-4xl font-extrabold bg-gradient-to-r from-[var(--color-gradient-from)] to-[var(--color-gradient-to)] bg-clip-text text-transparent mb-2">
-                                {item.metric}
+                            <div className="w-12 h-12 rounded-xl bg-[var(--color-accent)]/10 flex items-center justify-center mx-auto mb-3">
+                                <LucideIcon name={item.metric} size={24} className="text-[var(--color-accent)]" />
                             </div>
                             <div className="text-sm font-semibold text-[var(--color-text-primary)] mb-1">{item.label}</div>
                             <p className="text-xs text-[var(--color-text-muted)]">{item.description}</p>

@@ -117,14 +117,14 @@ export const siteConfig = {
        ══════════════════════════════════════════ */
     socialProof: {
         items: [
-            "🔄 +250 sessions de mentoring réalisées",
-            "⭐ Hassan a embauché son premier salarié",
-            "🚀 Sébastien a cassé son plafond de verre",
-            "💰 Gaetan est passé au forfait",
-            "🎯 Clients directs, zéro intermédiaire",
-            "📈 Vincent a signé une mission au forfait",
-            "🧠 Oladele a changé son mindset pour toujours",
-            "🔥 Rabah a vu que c'était faisable et pas si compliqué",
+            "+250 sessions de mentoring réalisées",
+            "Hassan a embauché son premier salarié",
+            "Sébastien a cassé son plafond de verre",
+            "Gaetan est passé au forfait",
+            "Clients directs, zéro intermédiaire",
+            "Vincent a signé une mission au forfait",
+            "Oladele a changé son mindset pour toujours",
+            "Rabah a vu que c'était faisable et pas si compliqué",
         ],
     },
 
@@ -132,49 +132,49 @@ export const siteConfig = {
        PAIN POINTS
        ══════════════════════════════════════════ */
     painPoints: {
-        eyebrow: "😤 Tu te reconnais ?",
+        eyebrow: "TU TE RECONNAIS ?",
         headline: "Tu n'aimes plus être",
         highlightedText: "un salarié déguisé",
         subtitle:
             "Le vrai problème n'est pas que tu ne sais pas te vendre. C'est ta posture. Tu continues à te présenter comme une ressource.",
         items: [
             {
-                icon: "🏢",
+                icon: "building",
                 title: "Dépendre d'un seul client",
                 description:
                     "Subir les horaires, les contraintes, les réunions inutiles. Tu es freelance sur le papier, salarié dans les faits.",
                 stat: "Salarié déguisé",
             },
             {
-                icon: "😴",
+                icon: "moon",
                 title: "Rester par sécurité",
                 description:
                     "Bosser 8h par jour, t'ennuyer dans ta mission mais rester parce que tu as peur du vide.",
                 stat: "Confort = piège",
             },
             {
-                icon: "📉",
+                icon: "trending-down",
                 title: "Peur de la coupure",
                 description:
                     "Tu as peur d'une coupure budgétaire ou d'une fin de mission. Zéro visibilité à 3 mois.",
                 stat: "0 visibilité",
             },
             {
-                icon: "🎯",
+                icon: "target",
                 title: "Tu pourrais viser plus haut",
                 description:
                     "Tu as un bon niveau technique. Mais tu vends ton temps, pas ton impact.",
                 stat: "Temps ≠ Valeur",
             },
             {
-                icon: "🤐",
+                icon: "lock",
                 title: "Tu ne sais pas faire autrement",
                 description:
                     "Tu attends qu'on vienne te chercher. Tu reproduis la logique du salariat sous statut freelance.",
                 stat: "Posture = problème",
             },
             {
-                icon: "💡",
+                icon: "lightbulb",
                 title: "Ce n'est pas ta faute",
                 description:
                     "On ne t'a jamais appris à faire autrement. Personne ne t'a montré comment passer de ressource à partenaire.",
@@ -187,32 +187,32 @@ export const siteConfig = {
        RESULTS
        ══════════════════════════════════════════ */
     results: {
-        eyebrow: "📊 CE QUE TU PEUX ATTENDRE",
+        eyebrow: "CE QUE TU PEUX ATTENDRE",
         headline: "Les résultats concrets",
         highlightedText: "du programme",
         subtitle:
             "Pas des promesses. Des résultats vérifiables.",
         items: [
             {
-                metric: "✅",
+                metric: "check-circle",
                 label: "Un process clair",
                 description: "Tu construis un système pour obtenir des réponses qualifiées de façon prévisible.",
                 badge: "Système",
             },
             {
-                metric: "🤝",
+                metric: "handshake",
                 label: "Premier client signé",
                 description: "Tu signes ton premier client direct en moins de 90 jours.",
                 badge: "Résultat",
             },
             {
-                metric: "📈",
+                metric: "trending-up",
                 label: "Revenus sécurisés",
                 description: "Tu sécurises tes revenus sur plusieurs mois sans dépendre d'un seul contrat.",
                 badge: "Stabilité",
             },
             {
-                metric: "🕐",
+                metric: "clock",
                 label: "Le contrôle de ton temps",
                 description: "Tu retrouves le contrôle sur ton planning, tes projets, et tu arrêtes de dépendre des ESN et des plateformes.",
                 badge: "Liberté",
@@ -224,7 +224,7 @@ export const siteConfig = {
        VIDEO TESTIMONIALS
        ══════════════════════════════════════════ */
     videoTestimonials: {
-        eyebrow: "🎬 ILS TÉMOIGNENT",
+        eyebrow: "ILS TÉMOIGNENT",
         headline: "Ils sont passés par",
         highlightedText: "le Programme Réitère",
         subtitle:
@@ -272,7 +272,7 @@ export const siteConfig = {
        SERVICES / WHAT'S INSIDE
        ══════════════════════════════════════════ */
     services: {
-        eyebrow: "🎯 COMMENT RÉITÈRE TE FAIT SORTIR DU PIÈGE",
+        eyebrow: "COMMENT RÉITÈRE TE FAIT SORTIR DU PIÈGE",
         headline: "Voici comment",
         highlightedText: "Réitère",
         headlineEnd: "te transforme",
@@ -280,21 +280,21 @@ export const siteConfig = {
             "Un programme basé sur l'apprentissage actif. Dès le jour 1, on commence à faire des actions.",
         items: [
             {
-                icon: "🧭",
+                icon: "compass",
                 title: "1. Clarifier ton offre",
                 description:
                     "On part de ton expérience pour extraire les problèmes que tu sais résoudre. Tu crées une offre compréhensible, spécifique et non-comparable.",
                 badge: "Fondation",
             },
             {
-                icon: "🛡️",
+                icon: "shield",
                 title: "2. Construire une posture solide",
                 description:
                     "Tu arrêtes de parler compétences. Tu te présentes comme un partenaire, pas un exécutant. Plus besoin de négocier ton TJM et le full remote.",
                 badge: "Posture",
             },
             {
-                icon: "⚡",
+                icon: "zap",
                 title: "3. Ton système (15 à 30 min/jour)",
                 description:
                     "Comment contacter les bonnes personnes, démarrer des conversations utiles, amener tes futurs clients en visio. Tu signes ton premier client en moins de 90 jours.",
@@ -302,28 +302,28 @@ export const siteConfig = {
                 span: 2,
             },
             {
-                icon: "🔍",
+                icon: "search",
                 title: "Audit du CV Inversé",
                 description:
                     "On bootstrape ton accompagnement en partant de ce que tu sais et ce que tu as déjà.",
                 badge: "Bonus",
             },
             {
-                icon: "📅",
+                icon: "calendar",
                 title: "La Perm' Hebdo",
                 description:
                     "Un live en mode mastermind, intelligence collective. Le mardi à 12h.",
                 badge: "Bonus",
             },
             {
-                icon: "✍️",
+                icon: "pen-tool",
                 title: "LinkedIn Post 101",
                 description:
                     "Le guide pour écrire un post en 10 min tout en attirant tes clients.",
                 badge: "Bonus",
             },
             {
-                icon: "🤖",
+                icon: "bot",
                 title: "Au'tomate + Assistant IA",
                 description:
                     "Les outils et tutos pour automatiser tes actions. Plus un assistant marketing IA. On est tech, pas marketeur.",
@@ -336,7 +336,7 @@ export const siteConfig = {
        PROCESS
        ══════════════════════════════════════════ */
     process: {
-        eyebrow: "⚡ LE PARCOURS",
+        eyebrow: "LE PARCOURS",
         headline: "Les 3 piliers de",
         highlightedText: "ta transformation",
         subtitle:
@@ -367,7 +367,7 @@ export const siteConfig = {
        TESTIMONIALS (written carousel)
        ══════════════════════════════════════════ */
     testimonials: {
-        eyebrow: "💬 TÉMOIGNAGES",
+        eyebrow: "TÉMOIGNAGES",
         headline: "Ce qu'ils",
         highlightedText: "en disent",
         headlineEnd: "",
@@ -435,7 +435,7 @@ export const siteConfig = {
        HONESTY
        ══════════════════════════════════════════ */
     honesty: {
-        eyebrow: "🤝 L'HISTOIRE DERRIÈRE RÉITÈRE",
+        eyebrow: "L'HISTOIRE DERRIÈRE RÉITÈRE",
         headline: "Pourquoi",
         highlightedText: "ce programme existe",
         paragraphs: [
@@ -454,7 +454,7 @@ export const siteConfig = {
        FAQ
        ══════════════════════════════════════════ */
     faq: {
-        eyebrow: "❓ FAQ",
+        eyebrow: "FAQ",
         headline: "Questions fréquentes",
         items: [
             {
@@ -538,7 +538,7 @@ export const siteConfig = {
        FINAL CTA
        ══════════════════════════════════════════ */
     finalCTA: {
-        eyebrow: "🚀 3 PLACES CHAQUE MOIS",
+        eyebrow: "3 PLACES CHAQUE MOIS",
         headline: "Tu peux continuer à subir. Ou tu peux",
         highlightedText: "reprendre le contrôle.",
         headlineEnd: "",
@@ -549,10 +549,10 @@ export const siteConfig = {
             { text: "Voir les témoignages →", href: "#temoignages", style: "secondary", arrow: false },
         ],
         badges: [
-            "🔄 +250 sessions",
-            "⚡ Résultats en 90 jours",
-            "🔒 3 places / mois",
-            "💬 Appel gratuit",
+            "+250 sessions",
+            "Résultats en 90 jours",
+            "3 places / mois",
+            "Appel gratuit",
         ],
     },
 
@@ -577,19 +577,19 @@ export const siteConfig = {
        ══════════════════════════════════════════ */
     merci: {
         headline: "C'est noté",
-        highlightedText: "à très vite ! 🔄",
+        highlightedText: "à très vite !",
         subtitle:
             "Ton appel découverte est réservé. On se retrouve très bientôt pour faire le point sur ta situation.",
         gift: {
-            badge: "🎬 EN ATTENDANT",
+            badge: "EN ATTENDANT",
             title: "Les 5 croyances limitantes du freelance tech",
             description:
                 "Découvre les 5 croyances qui t'empêchent de sortir du salariat déguisé. Regarde cette vidéo avant notre appel pour qu'on avance plus vite ensemble.",
             embedUrl: "https://www.youtube.com/embed/TbYu8Xl8Yl4",
             benefits: [
-                { icon: "🧠", label: "Les 5 blocages identifiés" },
-                { icon: "🔓", label: "Comment les dépasser" },
-                { icon: "💡", label: "Exemples concrets" },
+                { icon: "brain", label: "Les 5 blocages identifiés" },
+                { icon: "unlock", label: "Comment les dépasser" },
+                { icon: "lightbulb", label: "Exemples concrets" },
             ],
             footnote: "Les croyances qui te retiennent. Gratuit.",
         },

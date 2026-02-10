@@ -16,9 +16,9 @@ export default function Navbar() {
 
     return (
         <nav
-            className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled
-                    ? "bg-[var(--color-bg-primary)]/95 backdrop-blur-md border-b border-[var(--color-border-default)]"
-                    : "bg-transparent"
+            className={`fixed z-50 transition-all duration-500 ${scrolled
+                ? "top-3 left-3 right-3 bg-[var(--color-bg-primary)]/80 backdrop-blur-xl border border-[var(--color-border-default)] rounded-2xl shadow-lg shadow-black/5"
+                : "top-0 left-0 right-0 bg-transparent"
                 }`}
         >
             <div className="max-w-[1200px] mx-auto px-6 h-16 flex items-center justify-between">

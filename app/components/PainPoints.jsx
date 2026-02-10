@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import { siteConfig } from "@/site.config";
+import LucideIcon from "./LucideIcon";
 
 export default function PainPoints() {
     const { painPoints: data } = siteConfig;
@@ -43,11 +44,13 @@ export default function PainPoints() {
                         <div
                             key={i}
                             ref={(el) => (refs.current[i] = el)}
-                            className={`relative bg-[var(--color-bg-surface)] border border-[var(--color-border-default)] rounded-2xl p-8 hover:border-[var(--color-danger)]/30 transition-all duration-600 group ${visibleCards.includes(i) ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+                            className={`relative bg-[var(--color-bg-surface)] border border-[var(--color-border-default)] rounded-2xl p-8 hover:border-[var(--color-danger)]/30 hover:shadow-lg hover:shadow-[var(--color-danger)]/5 transition-all duration-300 cursor-pointer group ${visibleCards.includes(i) ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
                                 }`}
                             style={{ transitionDelay: `${i * 200}ms` }}
                         >
-                            <div className="text-4xl mb-4">{pain.icon}</div>
+                            <div className="w-10 h-10 rounded-xl bg-[var(--color-danger)]/10 flex items-center justify-center mb-4">
+                                <LucideIcon name={pain.icon} size={20} className="text-[var(--color-danger)]" />
+                            </div>
                             <h3 className="text-lg font-bold text-[var(--color-text-primary)] mb-3 leading-snug">{pain.title}</h3>
                             <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed mb-4">{pain.description}</p>
                             <div className="inline-block px-3 py-1 bg-[var(--color-danger)]/10 border border-[var(--color-danger)]/20 rounded-full text-xs text-[var(--color-danger)] font-medium">

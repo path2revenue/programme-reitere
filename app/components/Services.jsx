@@ -2,6 +2,7 @@
 
 import { useEffect, useRef, useState } from "react";
 import { siteConfig } from "@/site.config";
+import LucideIcon from "./LucideIcon";
 
 export default function Services() {
     const { services: data } = siteConfig;
@@ -42,11 +43,13 @@ export default function Services() {
                         <div
                             key={i}
                             ref={(el) => (refs.current[i] = el)}
-                            className={`relative bg-[var(--color-bg-card)] border border-[var(--color-border-default)] rounded-2xl p-6 hover:border-[var(--color-accent)]/40 hover:-translate-y-1 transition-all duration-500 group ${svc.span === 2 ? "md:col-span-2" : ""
+                            className={`relative bg-[var(--color-bg-card)] border border-[var(--color-border-default)] rounded-2xl p-6 hover:border-[var(--color-accent)]/40 hover:shadow-lg hover:shadow-[var(--color-accent)]/5 transition-all duration-300 cursor-pointer group ${svc.span === 2 ? "md:col-span-2" : ""
                                 } ${visibleCards.includes(i) ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"}`}
                             style={{ transitionDelay: `${i * 100}ms` }}
                         >
-                            <div className="text-3xl mb-3">{svc.icon}</div>
+                            <div className="w-10 h-10 rounded-xl bg-[var(--color-accent)]/10 flex items-center justify-center mb-4">
+                                <LucideIcon name={svc.icon} size={20} className="text-[var(--color-accent)]" />
+                            </div>
                             <h3 className="text-base font-bold text-[var(--color-text-primary)] mb-2">{svc.title}</h3>
                             <p className="text-sm text-[var(--color-text-secondary)] leading-relaxed">{svc.description}</p>
                             {svc.badge && (

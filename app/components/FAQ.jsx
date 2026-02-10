@@ -34,7 +34,7 @@ export default function FAQ() {
                         >
                             <button
                                 onClick={() => setOpen(open === i ? null : i)}
-                                className="w-full flex items-center justify-between px-6 py-5 text-left"
+                                className="w-full flex items-center justify-between px-6 py-5 text-left cursor-pointer"
                             >
                                 <span className="text-sm md:text-base font-semibold text-[var(--color-text-primary)] pr-4">{item.q}</span>
                                 <span className={`text-[var(--color-accent)] text-xl transition-transform ${open === i ? "rotate-45" : ""}`}>+</span>
