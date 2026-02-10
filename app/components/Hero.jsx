@@ -82,7 +82,7 @@ export default function Hero() {
 
                     {/* Subheadline */}
                     <p
-                        className="text-base md:text-lg text-[var(--color-text-secondary)] max-w-[550px] mx-auto leading-relaxed animate-[fadeInUp_1s_ease-out]"
+                        className="text-base md:text-lg text-[var(--color-text-secondary)] max-w-[750px] mx-auto leading-relaxed animate-[fadeInUp_1s_ease-out]"
                         dangerouslySetInnerHTML={{ __html: hero.subheadline }}
                     />
                 </div>
