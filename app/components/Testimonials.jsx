@@ -56,9 +56,17 @@ export default function Testimonials() {
                             &ldquo;{items[current].quote}&rdquo;
                         </p>
                         <div className="flex items-center gap-3">
-                            <div className="w-10 h-10 rounded-full bg-[var(--color-accent)]/20 flex items-center justify-center text-sm font-bold text-[var(--color-accent)]">
-                                {items[current].name.charAt(0)}
-                            </div>
+                            {items[current].image ? (
+                                <img
+                                    src={items[current].image}
+                                    alt={items[current].name}
+                                    className="w-12 h-12 rounded-full object-cover border-2 border-[var(--color-accent)]/30"
+                                />
+                            ) : (
+                                <div className="w-12 h-12 rounded-full bg-[var(--color-accent)]/20 flex items-center justify-center text-sm font-bold text-[var(--color-accent)]">
+                                    {items[current].name.charAt(0)}
+                                </div>
+                            )}
                             <div>
                                 <div className="text-sm font-semibold text-[var(--color-text-primary)]">{items[current].name}</div>
                                 <div className="text-xs text-[var(--color-text-muted)]">{items[current].role}</div>
@@ -74,8 +82,8 @@ export default function Testimonials() {
                             key={i}
                             onClick={() => goTo(i)}
                             className={`transition-all duration-300 rounded-full ${i === current
-                                    ? "w-8 h-2.5 bg-[var(--color-accent)]"
-                                    : "w-2.5 h-2.5 bg-[var(--color-border-hover)] hover:bg-[var(--color-accent)]/50"
+                                ? "w-8 h-2.5 bg-[var(--color-accent)]"
+                                : "w-2.5 h-2.5 bg-[var(--color-border-hover)] hover:bg-[var(--color-accent)]/50"
                                 }`}
                             aria-label={`Go to testimonial ${i + 1}`}
                         />
