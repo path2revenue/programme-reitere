@@ -26,6 +26,9 @@ export default function Testimonials() {
 
     const goTo = (i) => { setCurrent(i); setAutoplay(false); setTimeout(() => setAutoplay(true), 15000); };
 
+    const prev = () => goTo((current - 1 + total) % total);
+    const next = () => goTo((current + 1) % total);
+
     return (
         <section id="temoignages" ref={ref} className="py-24 px-6 bg-[var(--color-bg-surface)]/30">
             <div className={`max-w-[900px] mx-auto transition-all duration-700 ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}>
@@ -75,19 +78,35 @@ export default function Testimonials() {
                     </div>
                 </div>
 
-                {/* DOTS ONLY — no arrows for cleaner editorial look */}
-                <div className="flex items-center justify-center gap-3 mt-8">
-                    {items.map((_, i) => (
-                        <button
-                            key={i}
-                            onClick={() => goTo(i)}
-                            className={`transition-all duration-300 rounded-full ${i === current
-                                ? "w-8 h-2.5 bg-[var(--color-accent)]"
-                                : "w-2.5 h-2.5 bg-[var(--color-border-hover)] hover:bg-[var(--color-accent)]/50"
-                                }`}
-                            aria-label={`Go to testimonial ${i + 1}`}
-                        />
-                    ))}
+                {/* Navigation: arrows + dots */}
+                <div className="flex items-center justify-center gap-4 mt-8">
+                    <button
+                        onClick={prev}
+                        className="w-10 h-10 rounded-full border border-[var(--color-border-default)] flex items-center justify-center text-[var(--color-text-secondary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-all"
+                        aria-label="Précédent"
+                    >
+                        ‹
+                    </button>
+                    <div className="flex items-center gap-3">
+                        {items.map((_, i) => (
+                            <button
+                                key={i}
+                                onClick={() => goTo(i)}
+                                className={`transition-all duration-300 rounded-full ${i === current
+                                    ? "w-8 h-2.5 bg-[var(--color-accent)]"
+                                    : "w-2.5 h-2.5 bg-[var(--color-border-hover)] hover:bg-[var(--color-accent)]/50"
+                                    }`}
+                                aria-label={`Go to testimonial ${i + 1}`}
+                            />
+                        ))}
+                    </div>
+                    <button
+                        onClick={next}
+                        className="w-10 h-10 rounded-full border border-[var(--color-border-default)] flex items-center justify-center text-[var(--color-text-secondary)] hover:border-[var(--color-accent)] hover:text-[var(--color-accent)] transition-all"
+                        aria-label="Suivant"
+                    >
+                        ›
+                    </button>
                 </div>
             </div>
         </section>
